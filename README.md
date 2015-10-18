@@ -37,5 +37,5 @@
 ## Contributor
 * [Plutonist(wspl)](https://github.com/wspl)
 
-## LIcense
+## License
 GNU GPL V3
