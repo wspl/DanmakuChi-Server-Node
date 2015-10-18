@@ -1,7 +1,7 @@
 # DanmakuChi-Server-Node
 弹幕姬服务器端 Node (node.js) 版本
 
-![微信号示例](https://raw.githubusercontent.com/wspl/DanmakuChi-Server-Node/master/attachments/wechat.jpg)
+![微信号示例](https://raw.githubusercontent.com/wspl/DanmakuChi-Server-Node/master/attachments/wechat.png)
 
 ## 介绍
 　　弹幕姬是一款「微信x桌面」弹幕系统，开发者可以通过轻松的绑定，在微信公众号与桌面弹幕之间建立交互关系。任何人都可以通过微信公众号创建自己专属的弹幕频道，任何用户都可以通过微信向客户端发送弹幕。
