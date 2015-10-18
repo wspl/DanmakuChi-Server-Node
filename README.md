@@ -10,6 +10,19 @@
 
 　　客户端（Client End）负责与服务端的交互，进行弹幕的展示。目前已经开发了 [C# 版本](https://github.com/wspl/DanmakuChi-Client-CSharp)。
 
+## 使用帮助
+
+#### 生成频道二维码
+推荐使用[草料二维码生成器](http://cli.im/)来生成频道二维码。
+
+二维码文本格式：
+
+`dmk://channel/<channel_name>`
+
+例如，有个频道叫做 `Test`，则二维码文本为：
+
+`dmk://channel/Test`
+
 ## 技术栈
 该 Node 版本的服务端中，涉及到的技术栈如下：
 * ECMAScript 7
