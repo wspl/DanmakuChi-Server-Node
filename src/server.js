@@ -1,7 +1,7 @@
 import Express from 'express';
 import childProcess from 'child_process';
-import Wechat from './wechat';
-import Config from './config';
+import Wechat from './Wechat';
+import Config from './Config';
 
 const app = new Express();
 const socketServer = childProcess.fork('entries/entry_socket');

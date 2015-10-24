@@ -1,11 +1,11 @@
 import SocketIO from 'socket.io';
-import Config from './config';
+import Config from './Config';
 
 const io = SocketIO(Config.socket.listenPort);
 
 io.on('connection', function (socket) {
   socket.on('channel', (channel) => {
-    console.log(channel.toLowerCase());
+    //console.log(channel.toLowerCase());
     process.on('message', (data) => {
       if (data.type === 'CHANNEL_ISEXIST') {
         if (data.isExist) {

@@ -17,11 +17,11 @@
 
 二维码文本格式：
 
-`dmk://channel/<channel_name>`
+`http://weixin.qq.com/r/<qrcodeToken>?dmk_channel=<channel>`
 
-例如，有个频道叫做 `Test`，则二维码文本为：
+例如，「上师大弹幕姬」微信号中有个频道叫做 `Demo`，则二维码文本为：
 
-`dmk://channel/Test`
+`http://weixin.qq.com/r/MjoCGobEsdvOrcJ5928g?dmk_channel=Demo`
 
 ## 技术栈
 该 Node 版本的服务端中，涉及到的技术栈如下：
@@ -32,7 +32,7 @@
 * [Socket.IO](https://github.com/socketio/socket.io)
 
 ## TODO List
-- [ ] 模块化 wechat.js
+- [x] 模块化 wechat.js
 
 ## Contributor
 * [Plutonist(wspl)](https://github.com/wspl)
