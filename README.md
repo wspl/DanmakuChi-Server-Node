@@ -23,6 +23,8 @@
 
 `http://weixin.qq.com/r/MjoCGobEsdvOrcJ5928g?dmk_channel=Demo`
 
+同时，这个二维码同样可以用于关注微信号。
+
 ## 技术栈
 该 Node 版本的服务端中，涉及到的技术栈如下：
 * ECMAScript 7

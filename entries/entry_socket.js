@@ -1,2 +1,2 @@
 require('babel/register');
-require('../src/Socket.js');
+require('../src/Socket');
