@@ -9,8 +9,8 @@ export default {
     prefix: 'DMK_'
   },
   wechat: {
-    appid: '',
-    token: '',
-    encodingAESKey: ''
+    appid: 'wxa011ca5f473ba520',
+    token: 'VNTV203XYWM89Y7534N8',
+    encodingAESKey: '6Bn4BemA69tEGCip3NwOBKOVAKZtQUrs4rojLbmxKs2'
   },
 }

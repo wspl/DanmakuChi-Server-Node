@@ -140,8 +140,8 @@ function HandleEvent(weixin, res) {
   }
 }
 
-export default function (socketServer) {
-  const sm = SocketManager(socketServer);
+export default function (socketProxy) {
+  const sm = SocketManager(socketProxy);
   return Wechat(Config.wechat, (req, res, next) => {
     const weixin = req.weixin;
     switch (weixin.MsgType) {

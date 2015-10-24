@@ -101,7 +101,21 @@ export function RenewChannel(channel, user, callback) {
   });
 }
 
-export function SocketManager(ss) {
+export function SocketManager(sp) {
+  sp().addMethods({
+    isExist: (channel, callback) => {
+      redis.get(keys.channel(channel), (err, rs) => {
+        if (rs) callback(err, true);
+        else callback(err, false);
+      });
+    }
+  })
+  return {
+    send: (channel, body) => {
+      sp().send(channel, body);
+    }
+  }
+  /*
   ss.on('message', (data) => {
     if (data.type === 'CHANNEL_ISEXIST')
       redis.get(keys.channel(data.channel, true), (err, rs) => {
@@ -117,5 +131,5 @@ export function SocketManager(ss) {
         body: body
       });
     }
-  };
+  };*/
 }
