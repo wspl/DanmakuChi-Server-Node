@@ -13,7 +13,10 @@
 ## 使用帮助
 
 #### 生成频道二维码
-推荐使用[草料二维码生成器](http://cli.im/)来生成频道二维码。
+
+C# 客户端自带二维码生成器
+
+如果需要生成个性的二维码，推荐使用[草料二维码生成器](http://cli.im/)来生成频道二维码。
 
 二维码文本格式：
 
@@ -31,7 +34,7 @@
 * [Node 4.2.1](https://nodejs.org/en/)
 * [Express 4](https://github.com/strongloop/express)
 * [Babel](https://github.com/babel/babel)
-* [Socket.IO](https://github.com/socketio/socket.io)
+* WebSocket
 
 ## TODO List
 - [x] 模块化 wechat.js
