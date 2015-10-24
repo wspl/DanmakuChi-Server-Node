@@ -1,6 +1,6 @@
 {
   "name": "danmakuchi-server-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node.js server end of danmakuchi",
   "main": "run.js",
   "scripts": {
