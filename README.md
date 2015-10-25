@@ -10,7 +10,28 @@
 
 　　客户端（Client End）负责与服务端的交互，进行弹幕的展示。目前已经开发了 [C# 版本](https://github.com/wspl/DanmakuChi-Client-CSharp)。
 
-## 使用帮助
+## 使用姿势
+
+####部署
+**安装**
+```
+$ nvm use 4.2.1
+$ git clone https://github.com/wspl/DanmakuChi-Server-Node.git
+$ cd DanmakuChi-Server-Node
+$ npm install
+```
+然后你可以修改 `./src/Config.js`，进行个性化设置。
+
+**运行**
+```
+$ npm start
+```
+或者你可以通过 pm2 来以守护进程模式运行
+
+（提示：千万不要使用 `-i` 参数来开启负载均衡，否则 WebSocket 通信协议将失效！）
+```
+$ pm2 start ./
+```
 
 #### 生成频道二维码
 

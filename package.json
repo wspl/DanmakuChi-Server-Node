@@ -4,7 +4,8 @@
   "description": "node.js server end of danmakuchi",
   "main": "run.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,7 @@
   },
   "author": "Plutonist",
   "license": "GPL-3.0",
-  "bugs": { 
+  "bugs": {
     "url": "https://github.com/wspl/DanmakuChi-Server-Node/issues"
   },
   "homepage": "https://github.com/wspl/DanmakuChi-Server-Node#readme",
