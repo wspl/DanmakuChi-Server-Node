@@ -115,21 +115,4 @@ export function SocketManager(sp) {
       sp().send(channel, body);
     }
   }
-  /*
-  ss.on('message', (data) => {
-    if (data.type === 'CHANNEL_ISEXIST')
-      redis.get(keys.channel(data.channel, true), (err, rs) => {
-        if (rs) ss.send({ type: data.type, isExist: true });
-        else ss.send({ type: data.type, isExist: false });
-      });
-  });
-  return {
-    send: (channel, body) => {
-      ss.send({
-        type: 'DANMAKU_SEND',
-        channel: channel,
-        body: body
-      });
-    }
-  };*/
 }
