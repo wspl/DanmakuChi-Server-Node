@@ -34,8 +34,14 @@ function DanmakuMode(user, channel, body, res, sm) {
   });
   if (!isExit) {
     console.log(`${user} -> ${channel} : ${body}`);
-    sm.send(channel, body);
-    res.reply(messages['DANMAKU_SENT']);
+    body.split(/\n/).forEach((single) => {
+      if (body.length <= 100) {
+        sm.send(channel, single);
+        res.reply(messages['DANMAKU_SENT']);
+      } else {
+        res.reply(messages['DANMAKU_TOOLONG']);
+      }
+    })
   }
 }
 

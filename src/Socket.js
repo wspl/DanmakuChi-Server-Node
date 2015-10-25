@@ -21,7 +21,7 @@ export function SocketProxy() {
   let _methods = {
     send: (channel, body) => {
       if (channelSession[channel] && channelSession[channel].length > 0) {
-        channelSession[channel].forEach((ws) => {
+        channelSession[channel].forEach((ws ,i) => {
           try {
             ws.send('DANMAKU:' + body);
           } catch (e) {}
