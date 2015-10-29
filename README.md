@@ -20,7 +20,8 @@ $ git clone https://github.com/wspl/DanmakuChi-Server-Node.git
 $ cd DanmakuChi-Server-Node
 $ npm install
 ```
-然后你可以修改 `./src/Config.js`，进行个性化设置。
+你可以修改 `./src/Config.js`，设置监听端口、数据库前缀、绑定微信号。
+你可以修改 `./src/WechatAssets.js`，设置命令关键词、微信回复格式。
 
 **运行**
 ```

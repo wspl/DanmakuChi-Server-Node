@@ -1,9 +1,22 @@
 export const commands = new Map([
-  ['CHANNEL_CREATE', ['创建频道']],
-  ['CHANNEL_REMOVE', ['删除频道', '取消频道']],
-  ['CHANNEL_RENEW', ['频道续期']],
-  ['CHANNEL_ENTER', ['进入频道']],
-  ['CHANNEL_EXIT', ['断开频道', '退出频道', '离开频道']]
+  ['CHANNEL_CREATE', [
+    '创建频道',
+  ]],
+  ['CHANNEL_REMOVE', [
+    '删除频道',
+    '取消频道',
+  ]],
+  ['CHANNEL_RENEW', [
+    '频道续期',
+  ]],
+  ['CHANNEL_ENTER', [
+    '进入频道',
+  ]],
+  ['CHANNEL_EXIT', [
+    '断开频道',
+    '退出频道',
+    '离开频道',
+  ]]
 ]);
 
 export const messages = {
