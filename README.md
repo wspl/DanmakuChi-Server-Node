@@ -10,9 +10,22 @@
 
 　　客户端（Client End）负责与服务端的交互，进行弹幕的展示。目前已经开发了 [C# 版本](https://github.com/wspl/DanmakuChi-Client-CSharp)。
 
+
+## 特性
+- [x] 支持微信服务号绑定
+- [x] 支持微信订阅号绑定
+- [x] 多弹幕频道
+- [x] 单频道x多终端
+- [x] 通过微信二维码加入频道
+- [ ] 关键词过滤
+- [ ] 弹幕颜色设置
+- [ ] 弹幕位置设置
+- [ ] ~~高级弹幕（雾）~~ /w\
+- [ ] 针对已验证服务号的更多功能
+
 ## 使用姿势
 
-####部署
+###部署
 **安装**
 ```
 $ nvm use 4.2.1
@@ -20,8 +33,7 @@ $ git clone https://github.com/wspl/DanmakuChi-Server-Node.git
 $ cd DanmakuChi-Server-Node
 $ npm install
 ```
-你可以修改 `./src/Config.js`，设置监听端口、数据库前缀、绑定微信号。
-你可以修改 `./src/WechatAssets.js`，设置命令关键词、微信回复格式。
+然后你可以修改 `./src/Config.js`，进行个性化设置。
 
 **运行**
 ```
@@ -34,9 +46,9 @@ $ npm start
 $ pm2 start ./
 ```
 
-#### 生成频道二维码
+### 生成频道二维码
 
-C# 客户端自带二维码生成器
+[C# 客户端](https://github.com/wspl/DanmakuChi-Client-CSharp) 自带二维码生成器
 
 如果需要生成个性的二维码，推荐使用[草料二维码生成器](http://cli.im/)来生成频道二维码。
 
@@ -52,14 +64,11 @@ C# 客户端自带二维码生成器
 
 ## 技术栈
 该 Node 版本的服务端中，涉及到的技术栈如下：
-* ECMAScript 7
+* ECMAScript 6+
 * [Node 4.2.1](https://nodejs.org/en/)
 * [Express 4](https://github.com/strongloop/express)
 * [Babel](https://github.com/babel/babel)
 * WebSocket
-
-## TODO List
-- [x] 模块化 wechat.js
 
 ## Contributor
 * [Plutonist(wspl)](https://github.com/wspl)
